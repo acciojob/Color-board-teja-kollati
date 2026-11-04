@@ -18,6 +18,9 @@
 .square{
 	height: 30px;
 	width: 30px;
-	border: 1px solid white;
 	border-radius: 9px;
+}
+
+.square:hover{
+	tranform: scale(1.2);
 }
