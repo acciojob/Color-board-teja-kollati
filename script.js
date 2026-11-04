@@ -1,7 +1,7 @@
 //your JS code here. If required.
 const container = document.querySelector(".container");
 
-for (let i = 0; i < 2000; i++) {
+for (let i = 0; i < 800; i++) {
 	const box = document.createElement("div");
 	box.classList.add("square");
 	container.appendChild(box);
@@ -19,7 +19,7 @@ squares.forEach((box)=>{
 		box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 		box.style.transform = `scale(1.3)`
 	});
-	box.addEventListener("mouseout", ()=>{
+	box.addEventListener("mouseleave", ()=>{
 		box.style.backgroundColor = `transparent`;
 		box.style.transform = `scale(1)`;
 		box.style.transition = `1s ease`
