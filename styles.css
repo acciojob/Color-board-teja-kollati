@@ -1,1 +1,23 @@
 /*  your css code here. If applicable */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.square{
+	height: 30px;
+	width: 30px;
+	border: 1px solid white;
+	border-radius: 9px;
+}
