@@ -18,11 +18,10 @@ squares.forEach((box)=>{
 		
 		box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 		box.style.transform = `scale(1.3)`
-		box.style.transition = `0.3s ease`;
 	});
 	box.addEventListener("mouseout", ()=>{
 		box.style.backgroundColor = `transparent`;
 		box.style.transform = `scale(1)`;
-		box.style.transition = `1s`
+		box.style.transition = `1s ease`
 	});
 });
