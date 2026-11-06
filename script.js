@@ -18,11 +18,11 @@ squares.forEach((box)=>{
 		
 		
 		box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-		// box.style.transition = `background-color 0.3s ease`;
+		// box.style.transition = `background-color 0.2s ease-out`;
 
 	});
 		box.addEventListener("mouseleave", ()=>{
 			box.style.backgroundColor = `transparent`;
-			box.style.transition = `background-color 1s ease`
+			box.style.transition = `background-color 1s ease-out`
 		});
 });
