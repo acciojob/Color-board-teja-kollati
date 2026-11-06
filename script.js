@@ -16,12 +16,13 @@ squares.forEach((box)=>{
 		const b = Math.floor(Math.random() * 256);
 		const g = Math.floor(Math.random() * 256);
 		
+		
 		box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+		// box.style.transition = `background-color 0.3s ease`;
+
 	});
-	setInterval(()=>{
 		box.addEventListener("mouseleave", ()=>{
 			box.style.backgroundColor = `transparent`;
-			box.style.transition = `1s ease`
+			box.style.transition = `background-color 1s ease`
 		});
-	}, 1000);
 });
