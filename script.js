@@ -19,10 +19,9 @@ squares.forEach((box)=>{
 		
 		box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 		// box.style.transition = `background-color 0.2s ease-out`;
-
+	setTimeout(() => {
+		box.style.backgroundColor = `transparent`;
+		box.style.transition = `background-color 0.3s ease-out`;
+	}, 1000);
 	});
-		box.addEventListener("mouseleave", ()=>{
-			box.style.backgroundColor = `transparent`;
-			box.style.transition = `background-color 1s ease-out`
-		});
 });
